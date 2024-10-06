@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>List Game Acomputer</h1>
+    <p>
+      Pilih game dengan centang box diatas gambar game, nanti total gamenya akan
+      berubah mengikuti ukuran game. Buka selected Game untuk melihat game apa
+      saja yang sudah di pilih, Screenshot selected game dan kirim ke lewat chat
+      shopee. Pastikan laptop / pc kalian speknya support yahh. Selamat memilih
+    </p>
+    <h3>Total Size: <span id="totalSize">0</span> GB</h3>
+    <h2>ALL Games</h2>
+    <div id="gameContainer" class="game-grid"></div>
+    <!-- tombol tampilin list -->
+    <div class="selected-container">
+      <button id="toggleButton">
+        <span id="arrow">▼</span> Selected Games
+      </button>
+      <div id="selectedGames" class="hidden">
+        <ul id="selectedList"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

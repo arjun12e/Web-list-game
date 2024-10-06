@@ -1,0 +1,110 @@
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+h3 {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  width: 20%;
+  height: 40%;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+/* Grid layout untuk game */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.game-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.game-item:hover {
+  background-color: #6d6e7e;
+}
+
+.game-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Media queries untuk tampilan ponsel */
+@media (max-width: 600px) {
+  .game-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .game-item {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}
+/* untuk selected game */
+.selected-container {
+  margin-top: 30px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#selectedGames ul {
+  list-style: none;
+  padding: 0;
+}
+
+#selectedGames li {
+  padding: 8px;
+  background-color: #f0f0f0;
+  margin-top: 5px;
+  border-radius: 4px;
+}
